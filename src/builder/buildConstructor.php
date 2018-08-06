@@ -67,6 +67,8 @@ CODE;
 
             $printed = true;
 
+            $code .= "        \$this->{$argument->name()} = [];\n\n";
+
             $code .= "        foreach (\${$argument->name()} as \$__value) {\n";
             $code .= '            if (! ';
 
